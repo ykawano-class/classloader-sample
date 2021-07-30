@@ -14,7 +14,6 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-	implementation 'org.springframework.boot:spring-boot-loader'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
@@ -24,7 +23,7 @@ test {
 
 bootJar {
 	with copySpec {
-		from "$buildDir/classes/java/main/org"
-		into 'org'
+		from "$buildDir/classes/java/main/com/example/interfaces"
+		into 'com/example/interfaces'
 	}
 }

@@ -1,7 +1,6 @@
 package com.example.dummy;
 
-import org.springframework.boot.loader.I;
-import org.springframework.boot.loader.Sub;
+import com.example.interfaces.I;
 
 public class Impl implements I {
     @Override
@@ -9,6 +8,5 @@ public class Impl implements I {
         System.out.println("Helllllo!!");
         System.out.println(Impl.class.getClassLoader());
         System.out.println(I.class.getClassLoader());
-
     }
 }

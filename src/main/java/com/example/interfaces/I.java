@@ -1,4 +1,4 @@
-package org.springframework.boot.loader;
+package com.example.interfaces;
 
 public interface I {
 
